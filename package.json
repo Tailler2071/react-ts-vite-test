@@ -9,7 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "jest",
-    "test-v": "jest --verbose",
+    "test:verbose": "jest --verbose",
     "test:coverage": "jest --coverage",
     "test:collect-coverage": "jest --coverage --collectCoverageFrom='src/components/**/*.{ts,tsx}'",
     "test:collect-exception-coverage": "yarn test:collect-coverage --collectCoverageFrom='!src/components/**/*.{types,stories,constants,test,spec}.{ts,tsx}'"
