@@ -1,15 +1,15 @@
-import "./App.css";
-import {Application} from "./components/application/application";
-import {Counter} from "./components/counter/counter";
+import {AppProviders} from "./providers/app-providers";
+import {MuiMode} from "./components/mui/mui-mode";
 
 function App() {
 
     return (
-        <>
-            <h1>React Vite Jest</h1>
-            <Application/>
-            <Counter/>
-        </>
+        <AppProviders>
+            <div className="App">
+                <h1>React Vite Jest</h1>
+                <MuiMode/>
+            </div>
+        </AppProviders>
     );
 }
 
